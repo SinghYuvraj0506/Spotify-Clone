@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+
+:root{
+    --font:"'Ubuntu Mono', monospace";
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    align-items: center;
+    font-family: var(--font);
+    font-size: 21px;
+}
+
+.navbar ul{
+    display: flex;
+    align-items: center;
+}
+
+.navbar li{
+    list-style: none;
+    padding: 10px 15px;
+}
+
+.navbar li a{
+    text-decoration: none;
+    color: #8bf98b;
+}
+
+.navbar li a:hover{
+    color: white;
+}
+
+#brand img{
+    width: 4vw;
+    height: 7vh;
+    padding: 0px 22px 0px 0px;
+}
+
+#brand span{
+    position: relative;
+    bottom: 12px;
+    right: 20px;
+    font-size: 2rem;
+}
+    
+
+.browse{
+    width: 35vw;
+    height: 4vh;
+    position: relative;
+    right: 2vw;
+    border: 3px solid green;
+    border-radius: 18px;
+    padding: 4px 10px;
+    font-family: var(--font);
+    font-size: 0.8em;
+}
+
+/* background of the project */
+
+.background{
+    background: rgb(184, 177, 177) url("img/background.jpg");
+    background-size: cover;
+    background-position: 0px -36px;
+    background-blend-mode:multiply;
+}
+
+/* list of songs or main page */
+
+.container{
+    height: 75vh;
+    color: white;
+}
+
+.songitems{
+    margin-top: 35px;
+}
+
+.songlist{
+    width: 40vw;
+    height: 75vh;
+    text-align: center;
+    /* overflow-y: scroll; */
+}
+
+.songdetails{
+    width: 38vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    background-color: white;
+    border: 3px solid green;
+    border-radius: 15px;
+    height: 5vh;
+    margin: 15px 0px 0px 5px;
+    font-family: var(--font);
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.songdetails img{
+    width: 2vw;
+    height: 4vh;
+    border-radius: 50px;
+}
+
+.timespan{
+    position: relative;
+    right: 15px;
+    
+}
+
+.timespan i{
+    cursor: pointer;
+}
+
+
+
+
+/* Music navigator */
+
+.bottom{
+    position: sticky;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+}
+
+#musicbar{
+    width: 80vw;
+    color: white;
+    display: block;
+    text-align: center;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.icons i{
+    padding:0px 5px;
+    cursor: pointer;
+}
+
+.songinfo{
+    position: absolute;
+    left: 10vw;
+    top: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#gif{
+    opacity: 0;
+    transition: opacity 0.1s ease-in;
+}
